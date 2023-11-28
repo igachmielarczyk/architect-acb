@@ -1,0 +1,131 @@
+.offer {
+  padding-bottom: 7rem;
+  position: relative;
+  .wrapper-grid {
+    display: grid;
+    grid-column: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    .offer-box {
+      position: relative;
+      .img {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        &::after {
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $black;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: .4;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0.7;
+          display: block;
+          overflow: hidden;
+        }
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 2;
+          display: block;
+          content: "";
+          width: 0;
+          height: 0;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 100%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          opacity: 0;
+        }
+      }
+
+      h4 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-top: 1rem;
+      }
+      &:hover {
+        .img {
+          &::before {
+            -webkit-animation: circle 0.75s;
+            animation: circle 0.75s;
+          }
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+  }
+}
+
+/*RWD*/
+//1720
+@media only screen and (min-width: $x2){
+
+}
+//1400
+@media only screen and (max-width: $xxl){
+
+}
+
+//1200px
+@media only screen and (max-width: $xl){
+
+}
+//992px
+@media only screen and (max-width: $lg){
+
+
+}
+//768px
+@media only screen and (max-width: $md){
+  .offer {
+    .wrapper-grid {
+      grid-template-columns: 1fr;
+      column-gap: 0;
+      row-gap: 80px;
+    }
+  }
+  
+}
+//576px
+@media only screen and (max-width: $sm){
+
+}

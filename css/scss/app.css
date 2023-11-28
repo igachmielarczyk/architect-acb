@@ -1,0 +1,296 @@
+html, body {
+  font-family: "Arial";
+  font-size: 18px;
+}
+
+.btn-custom {
+  background: rgb(78, 136, 199);
+  background: linear-gradient(180deg, rgba(78, 136, 199, 0.6) 0%, rgba(62, 177, 171, 0.6) 100%);
+  color: white;
+  padding: 0.55rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 0;
+  margin-top: 1rem;
+}
+.btn-custom:hover {
+  background: linear-gradient(180deg, rgba(62, 177, 171, 0.6) 100%, rgba(78, 136, 199, 0.6) 0%);
+  color: white;
+}
+.btn-custom svg {
+  margin-top: -4px;
+  margin-right: 0.5rem;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  display: none;
+}
+.preloader .window {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .window h6 {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  font-family: Sans-serif;
+  text-transform: uppercase;
+}
+.preloader.show {
+  transition: all 500ms ease-in;
+  opacity: 1;
+}
+.preloader.hide {
+  transition: all 500ms ease-out;
+  opacity: 0;
+}
+
+@keyframes animate-svg-stroke-1 {
+  0% {
+    stroke-dashoffset: 161.9951477051px;
+    stroke-dasharray: 161.9951477051px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 161.9951477051px;
+  }
+  100% {
+    stroke-dashoffset: 161.9951477051px;
+    stroke-dasharray: 161.9951477051px;
+  }
+}
+#logo-loader .svg-elem-1 {
+  animation: animate-svg-stroke-1 3s ease-out 0.5s infinite both;
+}
+@keyframes animate-svg-stroke-2 {
+  0% {
+    stroke-dashoffset: 205.732711792px;
+    stroke-dasharray: 205.732711792px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 205.732711792px;
+  }
+  100% {
+    stroke-dashoffset: 205.732711792px;
+    stroke-dasharray: 205.732711792px;
+  }
+}
+#logo-loader .svg-elem-2 {
+  animation: animate-svg-stroke-2 6s ease-out 1s infinite both;
+}
+@keyframes animate-svg-stroke-3 {
+  0% {
+    stroke-dashoffset: 213.6391601563px;
+    stroke-dasharray: 213.6391601563px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 213.6391601563px;
+  }
+  100% {
+    stroke-dashoffset: 213.6391601563px;
+    stroke-dasharray: 213.6391601563px;
+  }
+}
+#logo-loader .svg-elem-3 {
+  animation: animate-svg-stroke-3 5s ease-out 1.5s infinite both;
+}
+@keyframes animate-svg-stroke-4 {
+  0% {
+    stroke-dashoffset: 68.9644393921px;
+    stroke-dasharray: 68.9644393921px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 68.9644393921px;
+  }
+  100% {
+    stroke-dashoffset: 68.9644393921px;
+    stroke-dasharray: 68.9644393921px;
+  }
+}
+#logo-loader .svg-elem-4 {
+  animation: animate-svg-stroke-4 2.5s ease-out 2s infinite both;
+}
+@keyframes animate-svg-stroke-5 {
+  0% {
+    stroke-dashoffset: 161.849822998px;
+    stroke-dasharray: 161.849822998px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 161.849822998px;
+  }
+  100% {
+    stroke-dashoffset: 161.849822998px;
+    stroke-dasharray: 161.849822998px;
+  }
+}
+#logo-loader .svg-elem-5 {
+  animation: animate-svg-stroke-5 6s ease-out 2.5s infinite both;
+}
+@keyframes animate-svg-stroke-6 {
+  0% {
+    stroke-dashoffset: 199.5636291504px;
+    stroke-dasharray: 199.5636291504px;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 199.5636291504px;
+  }
+  100% {
+    stroke-dashoffset: 199.5636291504px;
+    stroke-dasharray: 199.5636291504px;
+  }
+}
+#logo-loader .svg-elem-6 {
+  animation: animate-svg-stroke-6 2.5s ease-out 3s infinite both;
+}
+
+.navbar {
+  height: 100px;
+}
+.navbar .logo {
+  width: 250px;
+}
+.navbar .nav-link {
+  font-size: 1.15rem;
+  color: #4e88c7;
+  margin: 0 0.35rem;
+}
+.navbar .nav-link:hover {
+  color: #33cc99 !important;
+}
+.navbar .nav-link.active {
+  color: #333333 !important;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+.slider h1 {
+  font-size: 3rem;
+  color: white;
+  width: 65%;
+  margin-bottom: 1.2rem;
+  line-height: 4.3rem;
+}
+.slider h2 {
+  font-size: 1.35rem;
+  width: 70%;
+  line-height: 1.9rem;
+  color: white;
+}
+.slider .btn-custom {
+  background: rgb(78, 136, 199);
+  background: linear-gradient(180deg, rgba(78, 136, 199, 0.6) 0%, rgba(62, 177, 171, 0.6) 100%);
+  color: white;
+  padding: 0.55rem 1rem;
+  font-size: 1.2rem;
+}
+
+/** Swiper pagination bullets **/
+.swiper-pagination {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin: 0 0.5rem;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #33cc99;
+}
+
+.page-banner {
+  color: white;
+}
+
+.offers .card {
+  border: none !important;
+}
+.offers h3 {
+  font-size: 32px;
+}
+.offers .btn-default {
+  font-weight: bold;
+  float: right;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+.offers .btn-default svg {
+  margin-top: -4px;
+  margin-right: 0.5rem;
+}
+
+.page-banner {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+
+address h5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  line-height: 1.5rem;
+}
+address h5 .label {
+  display: block;
+  width: 200px;
+}
+address h5 .value {
+  display: block;
+}
+
+.contact-title {
+  margin-top: 1.5rem;
+}
+
+.form-control {
+  background-color: #e5eef7;
+  border-radius: 0;
+  border: none;
+  padding: 1rem 1rem;
+}
+.form-control:active {
+  background-color: #e5eef7;
+  border: none;
+}
+
+footer {
+  border-top: 2px solid #9a9a9a;
+}
+footer .ct {
+  font-size: 1rem;
+}
+footer .nav {
+  height: auto;
+  margin: 0;
+}
+footer .nav .nav-link {
+  font-size: 1rem;
+}/*# sourceMappingURL=app.css.map */

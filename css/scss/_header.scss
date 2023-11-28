@@ -1,0 +1,142 @@
+header {
+  .swiper-header {
+    height: calc(100vh - 100px);
+    position: relative;
+    overflow: hidden;
+    .swiper-slide {
+      background-color: $black;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $black;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: .4;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+      .content {
+        position: absolute;
+     bottom: 8%;
+        left: 5%;
+        z-index: 11;
+        width: 40vw;
+        h1 {
+          font-size: 4rem;
+          font-weight: 400;
+          color: white;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 2px !important;
+  height: 15px !important;
+  background-color: white;
+  opacity: 1;
+  border-radius: none !important;
+  border-radius: 0 !important;
+  margin: 10px !important;
+  transform-origin: top !important;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $primary;
+  }
+  &.swiper-pagination-bullet-active {
+    height: 40px !important;
+  }
+}
+
+/*RWD*/
+//1720
+@media only screen and (min-width: $x2){
+
+}
+//1400
+@media only screen and (max-width: $xxl){
+
+}
+
+//1200px
+@media only screen and (max-width: $xl){
+  header {
+    .swiper-header {
+      height: calc(100vh - 70px);
+      .swiper-slide {
+        .content {
+          width: 60vw;
+          h1 {
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+//992px
+@media only screen and (max-width: $lg){
+
+
+}
+//768px
+@media only screen and (max-width: $md){
+  header {
+    .swiper-header {
+      height: calc(80vh - 70px);
+      .swiper-slide {
+        .content {
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+  .header-section {
+    width: 100%;
+    margin-bottom: 2rem;
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1em;
+    }
+  }
+  section, main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+}
+//576px
+@media only screen and (max-width: $sm){
+  header {
+    .swiper-header {
+      .swiper-slide {
+        .content {
+          width: 80vw;
+          left: 0%;
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .header-section {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: .7em;
+    }
+  }
+  
+}

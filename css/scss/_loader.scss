@@ -1,0 +1,38 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+
+    .window {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.show {
+        // transition: all 500ms ease-in;
+        opacity: 1;
+        display: block;
+        h6 {
+            transition: all 500ms ease-in-out;
+            opacity: 1;
+        }
+    }
+
+    &.hide {
+        transition: all 500ms ease-out;
+        opacity: 0;
+        display: none;
+        h6 {
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ACB Arch - Projekty architektoniczne</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/offer-sub.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-subpage">
+      <div class="container-fluid">
+        <div class="nav-info">
+          <a
+            href="https://www.facebook.com/p/ACB-Architektura-Anita-Chrzanowska-Bac-100029707676048/"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+              />
+            </svg>
+          </a>
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+          </a>
+        </div>
+        <a href="index.html" class="nav-logo">
+          <img loading="lazy" src="images/logo.svg" alt="logo-acb-arch" />
+        </a>
+        <button
+          class="btn-offcanvas"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="o-mnie.html">O mnie</a>
+              </li>
+              <li></li>
+              <li class="dropdown">
+                <button
+                  class="nav-link dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Oferta
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="nav-link dropdown-item active"
+                      href="projekty-architektoniczne.html"
+                      >projekty architektoniczne</a
+                    >
+                  </li>
+                  <li>
+                    <a class="nav-link dropdown-item" href="projekty-wnetrz.html"
+                      >projekty wnętrz</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="nav-link dropdown-item"
+                      href="projekty-zagospodarowania-terenu.html"
+                      >projekty zagospodarowania terenu</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav-link" href="realizacje.html">Realizacje</a>
+              </li>
+              <li>
+                <a class="nav-link" href="tel:502 599 085 "
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                    />
+                  </svg>
+                  502 599 085
+                </a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="mailto:biuro@acb-arch.pl
+                "
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
+                    /></svg> biuro@acb-arch.pl
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-sub">
+      <img loading="lazy" src="images/realization-index/wnetrze_miechow_2.jpg" alt="" />
+      <h1>Projetky architektoniczne</h1>
+    </div>
+    <main class="offer-sub">
+      <div class="container text-img">
+        <div class="content multiple">
+          <div class="grid-wrap">
+            <img loading="lazy" src="images/realization-index/dom_miechow.jpg" alt="Dom" />
+            <img loading="lazy"
+              src="images/realization-index/dom_jedrzejow_kobiorska.jpg"
+              alt="Dom"
+            />
+            <img loading="lazy" src="images/realization-index/dom_miechow_2.jpg" alt="" />
+          </div>
+          <div class="text">
+            <p>
+              Głównym obszarem działalności biura ACB Architektura są projekty
+              architektoniczne. Zajmujemy się projektowaniem, zarówno budynków
+              jednorodzinnych i większych inwestycji. Oferta obejmuję współpracę
+              na wielu płaszczyznach, koordynujemy projekty od koncepcji,
+              poprzez projekt budowlany skończywszy na nadzorze autorskim.
+              Klient jest potraktowany kompleksowo, dzięki współpracy ze
+              specjalistami w różnych dziedzinach m.in. konstruktorami,
+              projektantami instalacji wodno-kanalizacyjnych, gazowych,
+              elektrycznych, klimatyzacji, kosztorysantami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="container-fluid realization-slider bg-black">
+      <div class="container">
+        <div class="header-section white">
+          <h3>Realizacje</h3>
+          <div class="line"></div>
+        </div>
+        <div class="swiper-realization">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_charsznica.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_lublin.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_pazera.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_miechow_2.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_miechow_2.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/dom_miechow_2.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_charsznica.jpg"
+                  alt="wnętrze"
+                />
+                <h4>wnętrze charsznica</h4>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="realizacje.html" class="item">
+                <img loading="lazy"
+                  src="images/realization-index/wnetrze_miechow.jpg"
+                  alt="wnętrze"
+                />
+                <h4>Lorem ipsum dolor sit.</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="s-nav swiper-button-next"></div>
+        <div class="s-nav swiper-button-prev"></div>
+      </div>
+    </section>
+    <div class="banner">
+      <img loading="lazy" class="blur" src="images/banner/D_SALON_2.jpg" alt="salon" />
+      <img loading="lazy" src="images/banner/D_SALON_2.jpg" alt="salon" />
+      <h3>
+        Zadowolenie klientów i piękne realizacje to nasz cel. Zaprojektujemy
+        Twój dom marzeń.
+      </h3>
+    </div>
+    <footer class="contact bg-black c-white">
+      <img loading="lazy" class="img-footer f1" src="images/footer/1.jpg" alt="wnętrze" />
+      <img loading="lazy" class="img-footer f2" src="images/footer/2.jpg" alt="wnętrze" />
+      <img loading="lazy" class="img-footer f3" src="images/footer/3.jpg" alt="wnętrze" />
+      <img loading="lazy" class="img-footer f4" src="images/footer/4.jpg" alt="wnętrze" />
+      <div class="container">
+        <div class="contact-form">
+          <div class="header-section white">
+            <h3>Formularz kontaktowy</h3>
+            <div class="line"></div>
+          </div>
+          <form class="row needs-validation" novalidate>
+            <div class="form-floating">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Imię i Nazwisko"
+                required
+              />
+              <label for="floatingInput">Imię</label>
+              <div class="invalid-feedback">Podaj imię</div>
+            </div>
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="E-mail"
+                required
+              />
+              <label for="email">Email</label>
+              <div class="invalid-feedback">Podaj adres e-mail</div>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Wiadomość"
+                id="message"
+                required
+              ></textarea>
+              <label for="message">Wiadomość</label>
+              <div class="invalid-feedback">Wpisz treść widomości</div>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="check"
+                required
+              />
+              <label class="form-check-label" for="check">
+                Wyrażam zgodę na przetwarzanie moich danych osobowych podanych w
+                powyższym formularzu przez ACB - Architektura Anita
+                Chrzanowska-Bac z siedzibą w Miechów Sienkiewicza 8b , zgodnie z
+                ogólnym rozporządzeniem o ochronie danych osobowych z dnia 27
+                kwietnia 2016 roku (RODO) w celu realizacji zgłoszenia
+                (udzielenia odpowiedzi na złożone zapytanie). Administratorem
+                Danych Osobowych jest ACB - Architektura Anita Chrzanowska-Bac z
+                siedzibą w Miechów Sienkiewicza 8b (e-mail –
+                <a href="mailto:biuro@acb-arch.pl">biuro@acb-arch.pl</a>, tel.
+                <a href="tel:502-599-085">502-599-085</a> Osoba wyrażająca zgodę
+                na przetwarzanie danych osobowych ma prawo dostępu do treści
+                przekazanych danych, ich poprawiania, sprostowania, usunięcia,
+                ograniczenia przetwarzania, przeniesienia oraz wniesienia skargi
+                do organu nadzorczego. Administrator nie udostępnia ani nie
+                przekazuje danych do państwa trzeciego/organizacji
+                międzynarodowej. Dane będą przechowywane w czasie niezbędnym do
+                zrealizowania celu, maksymalnie przez okres 2 lat. Dane nie będą
+                podlegać zautomatyzowanemu podejmowaniu decyzji, w tym
+                profilowaniu. Podanie danych jest dobrowolne, ale niezbędne do
+                realizacji wskazanego celu.
+              </label>
+              <div class="invalid-feedback">
+                Zaznacz zgodę na przetwarzanie danych
+              </div>
+            </div>
+            <div class="wrapper-btn">
+              <button class="link-more primary" type="submit">Wyślij</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div class="header-section white">
+            <h3>Kontakt</h3>
+            <div class="line"></div>
+          </div>
+          <div class="wrapper-info">
+            <div class="address">
+              <p class="strong">ACB - Architektura Anita Chrzanowska-Bac</p>
+              <p>Sienkiewicza 8b</p>
+              <p>32-200 Miechów</p>
+            </div>
+            <div class="office">
+              <h4>Biuro</h4>
+              <div class="item">
+                <p class="strong">ACB - Architektura Anita Chrzanowska-Bac</p>
+                <p>Kazimierza Jeżewskiego 11</p>
+                <p>28-300 Jędrzejów</p>
+              </div>
+              <div class="item">
+                <p class="text-uppercase">NIP: 6562332727</p>
+                <p class="text-uppercase">REGON: 366081532</p>
+              </div>
+              <div class="item">
+                <a href="tel:502 599 085"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
+                    />
+                  </svg>
+                  502 599 085
+                </a>
+                <a href="mailto:biuro@acb-arch.pl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="1em"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"
+                    /></svg>  biuro@acb-arch.pl
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="copyright">
+          <p>Copyright © 2016-2023 Acb-arch.pl. Wszystkie prawa zastrzeżone</p>
+          <p>Realizacja <a href="www.avatec.pl">www.avatec.pl</a></p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script src="js/realizationSwiper.js"></script>
+    <script src="js/contanctForm.js"></script>
+    <script src="js/footerGsap.js"></script>
+  </body>
+</html>

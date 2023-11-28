@@ -1,0 +1,237 @@
+.contact {
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+  position: relative;
+  .contact-form {
+    margin-bottom: 3rem;
+    form {
+      width: 40vw;
+      margin: 0 auto;
+    }
+    .header-section {
+      margin-bottom: 3rem;
+    }
+  }
+  .wrapper-btn {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  .wrapper-info {
+    display: flex;
+    justify-content: space-evenly;
+    p {
+      margin-bottom: 5px;
+    }
+    .item {
+      margin-bottom: 22px;
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        svg {
+          width: 20px;
+          margin-right: 9px;
+        }
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    h4 {
+      color: $primary;
+    }
+  }
+  .img-footer {
+    position: absolute;
+    object-fit: cover;
+    z-index: 1;
+
+    &.f1 {
+      width: 20vw;
+      height: auto;
+      top: 35%;
+      left: 2%;
+    }
+    &.f2 {
+      width: 15vw;
+      height: auto;
+      top: 5%;
+      left: 0;
+    }
+    &.f3 {
+      width: 20vw;
+      height: auto;
+      top: 20%;
+      right: 2%;
+    }
+    &.f4 {
+      width: 15vw;
+      height: auto;
+      top: 40%;
+     right: 0;
+    }
+  }
+}
+.form-floating {
+  margin-bottom: 10px;
+  & > label {
+    top: 0px;
+    left: 10px;
+  }
+  .form-control {
+    color: white;
+    background-color: transparent;
+    border-radius: 0;
+    &:focus {
+      color: white;
+      background-color: transparent;
+      border-color: white;
+      box-shadow: transparent;
+    }
+  }
+}
+
+.form-floating > .form-control-plaintext ~ label::after,
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after,
+.form-floating > .form-select ~ label::after {
+  background-color: transparent;
+  color: white;
+}
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: white;
+  transform: scale(0.85) translateY(-0.8rem) translateX(0.15rem);
+}
+
+.form-floating {
+  & > textarea {
+    &.form-control {
+      height: 200px;
+    }
+  }
+}
+.form-check {
+  margin-left: 15px;
+}
+.form-check-input {
+  border-radius: none !important;
+  &:checked {
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+.form-check-input[type="checkbox"] {
+	border-radius: 0;
+}
+.form-check-label {
+  font-size: 0.75rem;
+  a {
+    text-decoration: underline;
+  }
+}
+.copyright {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	p {
+    font-size: .875rem;
+		margin: 0;
+    a {
+      color: $primary;
+    }
+	}
+}
+
+/*RWD*/
+//1720
+@media only screen and (min-width: $x2){
+
+}
+//1400
+@media only screen and (max-width: $xxl){
+
+}
+
+//1200px
+@media only screen and (max-width: $xl){
+  .contact {
+    img {
+      display: none;
+    }
+    .contact-form {
+      form {
+        width: 80vw;
+      }
+    }
+    .wrapper-info {
+      h4 {
+        font-size: 1.125rem;
+      }
+    }
+  }
+  .wrapper-info {
+    p {
+      font-size: .875rem;
+    }
+  }
+}
+//992px
+@media only screen and (max-width: $lg){
+
+
+}
+//768px
+@media only screen and (max-width: $md){
+  .contact {
+    .contact-form {
+      .header-section {
+        margin-bottom: 2rem;
+      }
+      form {
+        width: 100%;
+      }
+    }
+    .wrapper-info {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .item {
+        a {
+          justify-content: center;
+        }
+      }
+      .address {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .copyright {
+    flex-direction: column;
+    text-align: center;
+    p {
+      font-size: 0.75rem;
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+}
+//576px
+@media only screen and (max-width: $sm){
+  .contact {
+    padding-top: 2rem;
+    .contact-form {
+      form {
+        width: 97%;
+      }
+    }
+  }
+  
+}
