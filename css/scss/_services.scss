@@ -40,7 +40,15 @@
 }
 //1400
 @media only screen and (max-width: $xxl){
-
+  .grid-services {
+    .box {
+      .text {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
 }
 
 //1200px

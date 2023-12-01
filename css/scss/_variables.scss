@@ -87,16 +87,6 @@ $grid-breakpoints: (
    x2: 1719.98px
 ) !default;
 
-// scss-docs-start container-max-widths
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px,
-  x2: 1680px
-) !default;
-
 //Variables - dla media query
 $xs: 0;
 $sm: 575.98px;
@@ -105,3 +95,10 @@ $lg: 991.98px;
 $xl: 1199.98px;
 $xxl: 1399.98px;
 $x2: 1720px;
+
+@media (min-width: 1720px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    /* max-width: 1320px; */
+    max-width: 1720px;
+  }
+}

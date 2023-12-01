@@ -4,7 +4,7 @@
 ScrollTrigger.matchMedia({
   "(min-width: 1200px)": function () {
     gsap.to('.f1', {
-      yPercent: 20,
+      yPercent: -10,
       scrollTrigger: {
           trigger: 'footer',
           start: '-50% 50%',
@@ -13,7 +13,7 @@ ScrollTrigger.matchMedia({
       }
     });
     gsap.to('.f2', {
-      yPercent: 40,
+      yPercent: 30,
       scrollTrigger: {
           trigger: 'footer',
           start: '-50% 50%',

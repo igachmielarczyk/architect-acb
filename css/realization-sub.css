@@ -1,3 +1,9 @@
+@media (min-width: 1720px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    /* max-width: 1320px; */
+    max-width: 1720px;
+  }
+}
 html,
 body {
   font-family: "Poppins", sans-serif;
@@ -5,6 +11,7 @@ body {
   background-color: white;
   position: relative;
   color: #333333;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,6 +31,7 @@ button {
 
 p {
   font-weight: 300;
+  font-size: 1.25rem;
 }
 
 .bg-dark {
@@ -46,7 +54,7 @@ main {
 
 .h3,
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-bottom: 1.25em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -65,7 +73,7 @@ h3 span {
   margin-bottom: 4rem;
 }
 .header-section h2 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   margin-bottom: 1.5em;
   display: initial;
@@ -74,6 +82,7 @@ h3 span {
   position: relative;
   padding: 0 1em;
   font-weight: 200;
+  text-transform: uppercase;
 }
 .header-section h3 {
   display: initial;
@@ -273,6 +282,17 @@ h3 span {
     left: -2%;
   }
 }
+@media only screen and (max-width: 1399.98px) {
+  .header-section h2 {
+    font-size: 3rem;
+  }
+  .h3, h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.125rem;
+  }
+}
 @media only screen and (max-width: 1199.98px) {
   body {
     padding-top: 70px;
@@ -319,14 +339,10 @@ h3 span {
 }
 @media only screen and (max-width: 991.98px) {
   .header-section h2 {
-    font-size: 2rem;
-  }
-  .h3,
-  h3 {
-    font-size: 1.125rem;
+    font-size: 2.5rem;
   }
   p {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   .header-sub h1 {
     font-size: 2.5rem;
@@ -340,12 +356,34 @@ h3 span {
     padding-right: 0;
     margin-bottom: 2em;
   }
+  .h3,
+  h3 {
+    font-size: 1.375rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  .header-section {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .header-section h2 {
+    font-size: 2.3rem;
+    margin-bottom: 1em;
+  }
+  section, main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 575.98px) {
+  .header-sub {
+    height: 25vh;
+  }
   .header-sub h1 {
     width: 90vw;
     word-break: break-word;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
   }
   section,
   main {
@@ -353,7 +391,7 @@ h3 span {
     padding-bottom: 2rem;
   }
   .header-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     margin: 0;
     width: 100%;
     margin-bottom: 2rem;
@@ -374,6 +412,12 @@ h3 span {
     top: 110%;
   }
   .s-nav.swiper-button-prev::after {
+    font-size: 1rem;
+  }
+  .h3, h3 {
+    font-size: 1.25rem;
+  }
+  p {
     font-size: 1rem;
   }
 }
@@ -425,6 +469,7 @@ h3 span {
   padding-left: 37px;
   transition: all 0.2s linear;
   float: left;
+  font-size: 1.125rem;
 }
 .link-more::before {
   content: "";
@@ -479,7 +524,32 @@ h3 span {
   background-color: white;
 }
 
+.btn.btn-submit {
+  border: 1px solid #33cc99;
+  background-color: #33cc99;
+  color: black;
+  border-radius: 0;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  padding: 0.75rem 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  transform-origin: center;
+  transition: all 0.3s linear;
+}
+.btn.btn-submit:hover {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 /*RWD*/
+@media only screen and (max-width: 575.98px) {
+  .link-more {
+    font-size: 1rem;
+  }
+}
 .contact {
   padding-top: 3rem;
   padding-bottom: 0rem;
@@ -507,6 +577,9 @@ h3 span {
 .contact .wrapper-info p {
   margin-bottom: 5px;
 }
+.contact .wrapper-info .address .item {
+  margin-top: 15px;
+}
 .contact .wrapper-info .item {
   margin-bottom: 22px;
 }
@@ -514,6 +587,7 @@ h3 span {
   display: flex;
   align-items: center;
   font-size: 1rem;
+  font-size: 1.25rem;
 }
 .contact .wrapper-info .item a svg {
   width: 20px;
@@ -533,7 +607,7 @@ h3 span {
 .contact .img-footer.f1 {
   width: 20vw;
   height: auto;
-  top: 35%;
+  top: 50%;
   left: 2%;
 }
 .contact .img-footer.f2 {
@@ -632,6 +706,11 @@ h3 span {
 }
 
 /*RWD*/
+@media only screen and (max-width: 1399.98px) {
+  .contact .contact-form form {
+    width: 50vw;
+  }
+}
 @media only screen and (max-width: 1199.98px) {
   .contact img {
     display: none;
@@ -641,6 +720,9 @@ h3 span {
   }
   .contact .wrapper-info h4 {
     font-size: 1.125rem;
+  }
+  .contact .wrapper-info .item a {
+    font-size: 1rem;
   }
   .wrapper-info p {
     font-size: 0.875rem;
@@ -835,7 +917,8 @@ h3 span {
 }
 .realizations .grid-realizations {
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr/1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 600px;
   row-gap: 15px;
   column-gap: 15px;
 }
@@ -892,9 +975,9 @@ h3 span {
 
 .tab-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
-  grid-auto-rows: 600px;
+  grid-auto-rows: 500px;
 }
 .tab-grid .box {
   position: relative;
@@ -903,7 +986,8 @@ h3 span {
 .tab-grid .box:focus-visible {
   outline: none;
 }
-.tab-grid .box img, .tab-grid .box a {
+.tab-grid .box img,
+.tab-grid .box a {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -960,7 +1044,8 @@ h3 span {
   color: #33cc99;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: #33cc99;
   background-color: transparent;
   border: 1px solid #33cc99;
@@ -1017,5 +1102,9 @@ h3 span {
   }
   .tab-grid {
     grid-template-columns: 1fr;
+  }
+  .realizations .link-more {
+    margin-left: 0;
+    font-size: 0.875rem;
   }
 }/*# sourceMappingURL=realization-sub.css.map */

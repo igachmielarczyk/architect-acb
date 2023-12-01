@@ -15,7 +15,7 @@ header {
         width: 100%;
         height: 100%;
         z-index: 1;
-        opacity: .4;
+        opacity: 0.4;
       }
       img {
         width: 100%;
@@ -24,7 +24,7 @@ header {
       }
       .content {
         position: absolute;
-     bottom: 8%;
+        bottom: 8%;
         left: 5%;
         z-index: 11;
         width: 40vw;
@@ -40,8 +40,8 @@ header {
 }
 
 .swiper-pagination-bullet {
-  width: 2px !important;
-  height: 15px !important;
+  width: 15px !important;
+  height: 2px !important;
   background-color: white;
   opacity: 1;
   border-radius: none !important;
@@ -53,22 +53,31 @@ header {
     background-color: $primary;
   }
   &.swiper-pagination-bullet-active {
-    height: 40px !important;
+    width: 40px !important;
   }
 }
 
 /*RWD*/
 //1720
-@media only screen and (min-width: $x2){
-
+@media only screen and (min-width: $x2) {
 }
 //1400
-@media only screen and (max-width: $xxl){
-
+@media only screen and (max-width: $xxl) {
+  header {
+    .swiper-header {
+      .swiper-slide {
+        .content {
+          h1 {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 //1200px
-@media only screen and (max-width: $xl){
+@media only screen and (max-width: $xl) {
   header {
     .swiper-header {
       height: calc(100vh - 70px);
@@ -84,15 +93,13 @@ header {
   }
 }
 //992px
-@media only screen and (max-width: $lg){
-
-
+@media only screen and (max-width: $lg) {
 }
 //768px
-@media only screen and (max-width: $md){
+@media only screen and (max-width: $md) {
   header {
     .swiper-header {
-      height: calc(80vh - 70px);
+      height: calc(90vh - 70px);
       .swiper-slide {
         .content {
           h1 {
@@ -102,30 +109,21 @@ header {
       }
     }
   }
-  .header-section {
-    width: 100%;
-    margin-bottom: 2rem;
-    h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1em;
-    }
+  .swiper-pagination {
+    text-align: right;
   }
-  section, main {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  
 }
 //576px
-@media only screen and (max-width: $sm){
+@media only screen and (max-width: $sm) {
   header {
     .swiper-header {
       .swiper-slide {
         .content {
-          width: 80vw;
+          width: 100%;
+          bottom: 10%;
           left: 0%;
           h1 {
-            font-size: 2rem;
+            font-size: 1.6rem;
             margin-bottom: 1rem;
           }
         }
@@ -135,8 +133,7 @@ header {
   .header-section {
     h2 {
       font-size: 1.5rem;
-      margin-bottom: .7em;
+      margin-bottom: 0.7em;
     }
   }
-  
 }

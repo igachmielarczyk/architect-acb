@@ -111,7 +111,11 @@
 }
 //992px
 @media only screen and (max-width: $lg){
-
+  .offer {
+    .wrapper-grid {
+      column-gap: 20px;
+    }
+  }  
 
 }
 //768px
@@ -122,6 +126,9 @@
       column-gap: 0;
       row-gap: 80px;
     }
+  }
+  .offer {
+    padding-bottom: 5rem;
   }
   
 }
